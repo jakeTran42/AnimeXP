@@ -8,7 +8,7 @@ class Nav extends Component {
     constructor(props) {
         super(props);
         this.state = { 
-            isLogin: true
+            isLogin: false
          }
     }
 
@@ -37,7 +37,7 @@ class Nav extends Component {
             <div className= "nav-container">
                 <div className="headers-wrapper">
                     <div id="animexp-brand" style={{'fontSize': '2em'}}>
-                        <a onClick={() => {this.props.history.push('/')}}>Anime</a><a onClick={() => {this.props.history.push('/browse')}} style={{'color': '#C13A3A'}}>XP</a>
+                        <a onClick={() => {this.props.history.push('/')}}>Anime</a><a onClick={() => {this.props.history.push('/')}} style={{'color': '#C13A3A'}}>XP</a>
                     </div>
                     <div id="nav-links">
                         <a 

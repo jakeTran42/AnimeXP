@@ -80,18 +80,17 @@ class App extends Component {
     //console.log('This is apps props:', this.props)
     return (
       <div className="App" style={{'width': "100vw",}}>
-        <Container style={{"margin": 0, "padding": 0, "max-width": "100%", 'width': '100%', 'height': "100%", "margin": 0, 'padding-right': '0px'}}>
+        {/* <Container style={{"margin": 0, "padding": 0, 'width': '100%', 'height': "100%", "margin": 0}}> */}
           {/* <Row style={{'width': "100%", "height": "100%", 'margin': 0}}> */}
             {/* <NavbarComponent authStatus={this.props.general.authStatus} cookies={this.props.cookies} history={this.props.history} modalStatus={this.props.general.modalStatus} updateModalStatus={this.props.onUpdateModalStatus} style={{'width': "100%"}}/> */}
             <Nav authStatus={this.props.general.authStatus} cookies={this.props.cookies} history={this.props.history} modalStatus={this.props.general.modalStatus} updateModalStatus={this.props.onUpdateModalStatus} style={{'width': "100%"}}/>
             <ConnectedRouter history={this.props.history}>
               <Switch>
-                <Route exact path="nav" component={Nav}/>
                 <Route exact path="/" render={
                     (props) => {
                       return (
                       // <HomePageComponent {...props} updateAuthStatus={this.props.onUpdateAuthStatus} authStatus={this.props.general.authStatus} cookies={this.props.cookies} saveMostPopularAnime={this.props.onSaveMostPopularAnime} mostPopularAnime={this.props.anime.mostPopular} animeLists={this.props.anime.animeLists} modalStatus={this.props.general.modalStatus} updateModalStatus={this.props.onUpdateModalStatus}/>
-                      <Home />
+                      <Home {...props} updateAuthStatus={this.props.onUpdateAuthStatus} authStatus={this.props.general.authStatus} cookies={this.props.cookies} saveMostPopularAnime={this.props.onSaveMostPopularAnime} mostPopularAnime={this.props.anime.mostPopular} animeLists={this.props.anime.animeLists} modalStatus={this.props.general.modalStatus} updateModalStatus={this.props.onUpdateModalStatus}/>
                       )
                     }
                   }
@@ -117,7 +116,7 @@ class App extends Component {
               </Switch>
             </ConnectedRouter>
           {/* </Row> */}
-        </Container>
+        {/* </Container> */}
       </div>
     );
   }
