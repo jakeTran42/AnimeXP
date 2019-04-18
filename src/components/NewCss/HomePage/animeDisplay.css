@@ -1,0 +1,88 @@
+.anime-display {
+    display: flex;
+    flex: 0 0 80%;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid; */
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.anime-card {
+    /* display: flex; */
+    display: inline-block;
+    border-radius: 3px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+
+#card-image {
+    width: 100%;
+    height: 300px;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+#card-title {
+    float: left;
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    bottom: 0px;
+    color: aliceblue;
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 15%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.1em;
+}
+
+.card-description {
+    display: none;
+    z-index: 2;
+    /* flex-grow: 1; */
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    color: aliceblue;
+    background: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
+
+.overlay-description {
+    display: none;
+    background: linear-gradient(to top,  rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    z-index: 5;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 30%;
+}
+
+.anime-card:hover #card-title{
+    display: none;
+    background: rgba(0, 0, 0, .7);
+}
+
+.anime-card:hover .card-description{
+    display: block;
+}
+
+.anime-card:hover .overlay-description{
+    display: block;
+    transition: ease-in-out 2s;
+}
+
+

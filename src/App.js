@@ -18,6 +18,7 @@ import NavbarComponent from './components/small/NavbarComponent'
 
 import Nav from './components/NewCss/Nav/Nav';
 import Home from './components/NewCss/HomePage/Home'
+import Browse from './components/NewCss/BrowsePage/Browse'
 
 import logo from './logo.svg';
 import './App.css';
@@ -94,6 +95,10 @@ class App extends Component {
                       )
                     }
                   }
+                />
+
+                <Route 
+                  exact path="/browse" component={Browse}
                 />
                 <Route path="/anime/:animeId" render={
                     (props) => {

@@ -85,3 +85,7 @@
 #animexp-brand:hover, #recommend-link:hover, #browse-link:hover, .logout-btn:hover, .login-btn:hover, .logout-btn:hover {
     cursor: pointer;
 }
+
+#recommend-link:hover, #browse-link:hover, .logout-btn:hover, .login-btn:hover, .logout-btn:hover {
+    color: #C13A3A;
+}

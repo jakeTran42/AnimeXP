@@ -74,12 +74,10 @@ class Home extends Component {
                 </div>
 
                 <div className="anime-display">
-                  <div id="random-anime">
-                    {animeToDisplay 
-                      ? <AnimeDisplayComponent anime={animeToDisplay} />
-                      : ''
-                    }
-                  </div>
+                  {animeToDisplay 
+                    ? <AnimeDisplayComponent anime={animeToDisplay} />
+                    : ''
+                  }
                 </div>
 
             </div>
