@@ -2,7 +2,7 @@ import React from 'react';
 import './animeDisplay.css'
 
 const AnimeDisplay = (props) => {
-    console.log(props.anime.coverImage)
+    // console.log(props.anime.coverImage)
     return ( 
         <div className="anime-card">
             <img id="card-image" src={props.anime.posterImage} />

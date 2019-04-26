@@ -31,6 +31,20 @@ class Nav extends Component {
         this.props.updateModalStatus(SEARCHING_MODAL_STATUS)
       }
 
+    toggleAuth(e, isLogin) {
+        if (e) {
+          e.stopPropagation();
+          e.nativeEvent.stopImmediatePropagation();
+          e.preventDefault()
+        }
+        if (isLogin) {
+          this.props.history.push('/login')
+        } else {
+          this.props.history.push('/register')
+        }
+        this.props.updateModalStatus(AUTHENICATION_MODAL_STATUS);
+    }
+
     render() { 
         return ( 
 
@@ -68,10 +82,10 @@ class Nav extends Component {
                             </div>
                         )
                         : (<div className="not-auth">
-                            <div className="login-btn">
+                            <div className="login-btn" onClick={(e) => {this.toggleAuth(e, true)}}>
                                 Login
                             </div>
-                            <div className="logout-btn" style={{'color': '#C13A3A'}}>
+                            <div className="logout-btn" style={{'color': '#C13A3A'}} onClick={(e) => {this.toggleAuth(e, false)}}>
                                 Register
                             </div>
                         </div>) 
