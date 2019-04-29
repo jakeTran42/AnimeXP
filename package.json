@@ -1,0 +1,52 @@
+{
+  "name": "anime-xp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel": "^6.23.0",
+    "bootstrap": "^4.3.1",
+    "connected-react-router": "^6.3.2",
+    "email-validator": "^2.0.4",
+    "history": "^4.9.0",
+    "i": "^0.3.6",
+    "inobounce": "^0.1.6",
+    "npm": "^6.9.0",
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.6",
+    "react-cookie": "^3.1.2",
+    "react-dom": "^16.8.5",
+    "react-ga": "^2.5.7",
+    "react-redux": "^6.0.1",
+    "react-responsive-modal": "^3.6.0",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "^2.0.0",
+    "react-scroll-horizontal": "^1.6.2",
+    "react-scrollbar": "^0.5.4",
+    "react-spinners": "^0.5.4",
+    "react-switch": "^4.1.0",
+    "react-youtube": "^7.9.0",
+    "reactstrap": "^7.1.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "node node_modules/react-scripts/scripts/start.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
