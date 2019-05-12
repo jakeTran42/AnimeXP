@@ -12,7 +12,7 @@ import { withCookies } from 'react-cookie';
 import { onSaveMostPopularAnime, updateAllAnime, updateAnAnime } from './actions/AnimeActions';
 import { onUpdateModalStatus, onUpdateAuthStatus } from './actions/GeneralActions';
 
-import HomePageComponent from './components/HomePageComponent'
+import HomePageComponent from './components/HomePageComponents'
 import AnimeDescriptionComponent from './components/small/AnimeDescriptionComponent'
 import NavbarComponent from './components/small/NavbarComponent'
 
@@ -90,8 +90,8 @@ class App extends Component {
                 <Route exact path="/" render={
                     (props) => {
                       return (
-                      // <HomePageComponent {...props} updateAuthStatus={this.props.onUpdateAuthStatus} authStatus={this.props.general.authStatus} cookies={this.props.cookies} saveMostPopularAnime={this.props.onSaveMostPopularAnime} mostPopularAnime={this.props.anime.mostPopular} animeLists={this.props.anime.animeLists} modalStatus={this.props.general.modalStatus} updateModalStatus={this.props.onUpdateModalStatus}/>
-                      <Home {...props} updateAuthStatus={this.props.onUpdateAuthStatus} authStatus={this.props.general.authStatus} cookies={this.props.cookies} saveMostPopularAnime={this.props.onSaveMostPopularAnime} mostPopularAnime={this.props.anime.mostPopular} animeLists={this.props.anime.animeLists} modalStatus={this.props.general.modalStatus} updateModalStatus={this.props.onUpdateModalStatus}/>
+                      <HomePageComponent {...props} updateAuthStatus={this.props.onUpdateAuthStatus} authStatus={this.props.general.authStatus} cookies={this.props.cookies} saveMostPopularAnime={this.props.onSaveMostPopularAnime} mostPopularAnime={this.props.anime.mostPopular} animeLists={this.props.anime.animeLists} modalStatus={this.props.general.modalStatus} updateModalStatus={this.props.onUpdateModalStatus}/>
+                      // <Home {...props} updateAuthStatus={this.props.onUpdateAuthStatus} authStatus={this.props.general.authStatus} cookies={this.props.cookies} saveMostPopularAnime={this.props.onSaveMostPopularAnime} mostPopularAnime={this.props.anime.mostPopular} animeLists={this.props.anime.animeLists} modalStatus={this.props.general.modalStatus} updateModalStatus={this.props.onUpdateModalStatus}/>
                       )
                     }
                   }

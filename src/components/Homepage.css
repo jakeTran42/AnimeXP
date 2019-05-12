@@ -1,0 +1,121 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* border: 1px solid blue; */
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    /* margin: 0%; */
+    margin-bottom: 20px;
+    /* overflow: scroll; */
+}
+
+.user-list-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* border: 1px solid red; */
+    padding-top: 10px;
+    flex: 0 0 25%;
+    margin: 10px;
+    background: #272C38;
+    border-radius: 3px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.15);
+    overflow: scroll;
+    flex-wrap: wrap;
+}
+
+.list-recommend-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* border: 1px solid green; */
+    flex: 0 0 70%;
+    margin: 10px;
+    background: #272C38;
+    border-radius: 3px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.15);
+}
+
+#userlist-header {
+    color: #C13A3A !important;
+}
+
+.userlist-create-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    border: 1px solid #272C38;
+    background: #C13A3A;
+    width: 75px;
+    height: 30px;
+}
+
+.userlist-create-btn:hover {
+    cursor: pointer;
+    background: rgb(163, 40, 40);
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
+}
+
+.empty-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.selected-list-wrapper {
+    width: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+    flex: 0 0 10%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.selected-list-title {
+    color: aliceblue;
+    font-size: 2em;
+    display: flex;
+    flex: 0 0 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+#screen-alt-btn {
+    display: flex;
+    flex: 0 0 20%;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    /* border: solid 1px aliceblue; */
+    background: rgb(192, 40, 73);
+    font-size: 1.3em;
+    padding: 5px;
+    border-radius: 2px;
+}
+
+#screen-alt-btn:hover {
+    cursor: pointer;
+}
+
+.selected-list-content {
+    width: 100%;
+    display: flex;
+    flex: 0 0 90%;
+    /* border: 1px solid green; */
+    padding: 10px;
+    flex-wrap: wrap;
+    overflow: scroll;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #C13A3A;
+}
