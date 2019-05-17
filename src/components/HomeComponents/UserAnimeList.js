@@ -4,7 +4,7 @@ import './UserAnimeList.css'
 const UserAnimeList = (props) => {
     console.log(props)
     return ( 
-        <li className="userList-title-container" style={{'color': 'aliceblue', 'fontSize': '1.2em'}}>
+        <li className="userList-title-list" style={{'color': 'aliceblue', 'fontSize': '1.2em'}}>
             {props.userlist.title}
         </li>
      );

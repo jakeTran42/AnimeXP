@@ -765,9 +765,38 @@ class HomePageComponent extends Component {
       {title: "title 1", description: "description 1"},
       {title: "title 1", description: "description 1"},
       {title: "title 1", description: "description 1"},
+      {title: "title 1", description: "description 1"},
+      {title: "title 1", description: "description 1"},
+      {title: "title 1", description: "description 1"},
+      {title: "title 1", description: "description 1"},
+      {title: "title 1", description: "description 1"},
+      {title: "title 1", description: "description 1"},
+      {title: "title 1", description: "description 1"},
+      {title: "title 1", description: "description 1"},
+      {title: "title 1", description: "description 1"},
+      {title: "title 1", description: "description 1"},
+      {title: "title 1", description: "description 1"},
+      {title: "title 1", description: "description 1"},
+      {title: "title 1", description: "description 1"},
+      {title: "title 1", description: "description 1"},
+      {title: "title 1", description: "description 1"},
+      {title: "title 1", description: "description 1"},
+      {title: "title 1", description: "description 1"},
+      {title: "title 1", description: "description 1"},
+      {title: "title 1", description: "description 1"},
     ]
 
     const fakeAnimeContents = [
+      {title: 'My Hero Academia Season 3', posterImage: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx100166-TxwbUGculKAX.jpg", description: 'The third season of <i>Boku no Hero Academia'},
+      {title: 'My Hero Academia Season 3', posterImage: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx100166-TxwbUGculKAX.jpg", description: 'The third season of <i>Boku no Hero Academia'},
+      {title: 'My Hero Academia Season 3', posterImage: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx100166-TxwbUGculKAX.jpg", description: 'The third season of <i>Boku no Hero Academia'},
+      {title: 'My Hero Academia Season 3', posterImage: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx100166-TxwbUGculKAX.jpg", description: 'The third season of <i>Boku no Hero Academia'},
+      {title: 'My Hero Academia Season 3', posterImage: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx100166-TxwbUGculKAX.jpg", description: 'The third season of <i>Boku no Hero Academia'},
+      {title: 'My Hero Academia Season 3', posterImage: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx100166-TxwbUGculKAX.jpg", description: 'The third season of <i>Boku no Hero Academia'},
+      {title: 'My Hero Academia Season 3', posterImage: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx100166-TxwbUGculKAX.jpg", description: 'The third season of <i>Boku no Hero Academia'},
+      {title: 'My Hero Academia Season 3', posterImage: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx100166-TxwbUGculKAX.jpg", description: 'The third season of <i>Boku no Hero Academia'},
+      {title: 'My Hero Academia Season 3', posterImage: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx100166-TxwbUGculKAX.jpg", description: 'The third season of <i>Boku no Hero Academia'},
+      {title: 'My Hero Academia Season 3', posterImage: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx100166-TxwbUGculKAX.jpg", description: 'The third season of <i>Boku no Hero Academia'},
       {title: 'My Hero Academia Season 3', posterImage: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx100166-TxwbUGculKAX.jpg", description: 'The third season of <i>Boku no Hero Academia'},
       {title: 'My Hero Academia Season 3', posterImage: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx100166-TxwbUGculKAX.jpg", description: 'The third season of <i>Boku no Hero Academia'},
       {title: 'My Hero Academia Season 3', posterImage: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx100166-TxwbUGculKAX.jpg", description: 'The third season of <i>Boku no Hero Academia'},
@@ -787,10 +816,12 @@ class HomePageComponent extends Component {
     return (
       <div className="container">
         {this.loadModals()}
+
         <div className='user-list-container'>
             <h2 style={{'color': '#C13A3A'}}>Your Anime List</h2>
             {this.displayUserList(fakeAnimesTitles)}
         </div>
+
         <div className='list-recommend-container'>
             <div className="selected-list-wrapper">
               <div className="selected-list-title">{this.state.recommendationSelected ? "Recommendations base on this list" : "All animes added in this list" }</div>
@@ -806,11 +837,6 @@ class HomePageComponent extends Component {
   }
 
   displayListContent = (animes) => {
-      // return(
-      //   this.state.userListEmpty 
-      //   ? this.state.recommendationSelected ? <AnimeDisplay anime={recommendations} /> : <AnimeDisplay anime={animes} />
-      //   : <div>There is currently no list selected</div>
-      // )
 
       const fakeAnimeRec = [
         {title: '5-toubun', posterImage: "https://s4.anilist.co/file/anilistcdn/media/anime/cover/medium/nx100166-TxwbUGculKAX.jpg", description: 'The third season of <i>Boku no Hero Academia'},
